@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Credano</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #faf8f5;
+      color: #2c1a0e;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8B5E3C 0%, #5C3A1E 100%);
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    header .subtitle {
+      font-size: 15px;
+      opacity: 0.8;
+      margin-bottom: 4px;
+    }
+
+    header .updated {
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .lang-btn {
+      background: rgba(255,255,255,0.15);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+
+    .lang-btn:hover, .lang-btn.active {
+      background: rgba(255,255,255,0.3);
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+      border: 1px solid #ede5dc;
+      box-shadow: 0 2px 12px rgba(139,94,60,0.06);
+    }
+
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #8B5E3C;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .num {
+      background: #8B5E3C;
+      color: white;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .section h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #5C3A1E;
+      margin: 18px 0 8px;
+    }
+
+    .section p {
+      font-size: 14.5px;
+      color: #4a3020;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      font-size: 14.5px;
+      color: #4a3020;
+      padding: 5px 0 5px 22px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: '•';
+      color: #8B5E3C;
+      font-weight: 700;
+      position: absolute;
+      left: 6px;
+    }
+
+    .section a {
+      color: #8B5E3C;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .section a:hover { text-decoration: underline; }
+
+    .highlight {
+      background: #f5f0eb;
+      border-left: 3px solid #8B5E3C;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      font-size: 14px;
+      color: #3a2010;
+    }
+
+    .disclaimer {
+      background: linear-gradient(135deg, #8B5E3C 0%, #5C3A1E 100%);
+      color: white;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(139,94,60,0.25);
+    }
+
+    .disclaimer h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .disclaimer p {
+      font-size: 14px;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 12px;
+    }
+
+    .disclaimer p:last-child { margin-bottom: 0; }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: #8B5E3C;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .contact-btn:hover { background: #5C3A1E; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #7a6555;
+    }
+
+    /* Language sections */
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Credano</div>
+  <div class="subtitle">Privacy Policy / Политика конфиденциальности</div>
+  <div class="updated">Last updated: March 2026</div>
+  <div class="lang-switcher">
+    <a class="lang-btn active" onclick="switchLang('ru', this)">РУС</a>
+    <a class="lang-btn" onclick="switchLang('en', this)">ENG</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ══════════ РУССКАЯ ВЕРСИЯ ══════════ -->
+  <div class="lang-section visible" id="lang-ru">
+
+    <div class="section">
+      <h2><span class="num">1</span>Введение</h2>
+      <p>Настоящая Политика конфиденциальности описывает, как приложение <strong>Credano</strong> собирает, использует и защищает информацию при использовании мобильного приложения.</p>
+      <p>Используя Приложение, вы соглашаетесь со сбором и использованием информации в соответствии с настоящей политикой.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span>Что мы представляем собой</h2>
+      <div class="highlight">
+        Credano — агрегатор займов. Мы <strong>НЕ предоставляем займы напрямую</strong>. Все договоры займа заключаются непосредственно между пользователем и организацией-Партнёром.
+      </div>
+      <p>Мы отображаем предложения от сторонних финансовых организаций («Партнёры»), чтобы помочь пользователям найти подходящие кредитные продукты.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span>Какую информацию мы собираем</h2>
+      <h3>3.1 Собираем автоматически:</h3>
+      <ul>
+        <li>Приблизительное местоположение (страна) — по IP-адресу через ip-api.com, только для отображения актуальных предложений</li>
+        <li>Данные об использовании — просмотренные страницы, нажатые кнопки, продолжительность сессии (Firebase Analytics)</li>
+        <li>Информация об устройстве — тип, версия ОС, версия приложения, язык</li>
+      </ul>
+      <h3>3.2 НЕ собираем:</h3>
+      <ul>
+        <li>Имя, фамилию, номер телефона, email</li>
+        <li>Паспортные данные, финансовую информацию, кредитную историю</li>
+        <li>Точное местоположение по GPS</li>
+        <li>Личные данные на наших серверах не хранятся</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span>Как мы используем информацию</h2>
+      <ul>
+        <li>Определение страны для отображения актуальных предложений</li>
+        <li>Сохранение выбранной страны локально на устройстве</li>
+        <li>Улучшение производительности и устранение ошибок (Firebase Crashlytics)</li>
+        <li>Анализ взаимодействия пользователей с приложением (Firebase Analytics)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">5</span>Передача данных третьим лицам</h2>
+      <div class="highlight">Мы не продаём, не обмениваем и не сдаём в аренду вашу личную информацию третьим лицам.</div>
+      <h3>5.1 Используемые сторонние сервисы:</h3>
+      <ul>
+        <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Firestore) — инфраструктура, аналитика, отчёты об ошибках. <a href="https://firebase.google.com/support/privacy" target="_blank">Политика Firebase →</a></li>
+        <li><strong>ip-api.com</strong> — определение страны по IP. <a href="https://ip-api.com/docs/legal" target="_blank">Их политика →</a></li>
+      </ul>
+      <h3>5.2 Сайты партнёров:</h3>
+      <p>При нажатии «Оформить заявку» вы переходите на внешний сайт партнёра. Мы не несём ответственности за политику конфиденциальности партнёров.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">6</span>Хранение данных</h2>
+      <ul>
+        <li>Выбор страны хранится локально и удаляется при удалении приложения</li>
+        <li>Персональные данные на наших серверах не хранятся</li>
+        <li>Анонимная аналитика — до 14 месяцев (стандарт Firebase)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">7</span>Дети</h2>
+      <p>Приложение не предназначено для лиц <strong>младше 18 лет</strong>. Все кредитные продукты предназначены исключительно для взрослых. Мы сознательно не собираем информацию от несовершеннолетних.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">8</span>Безопасность</h2>
+      <p>Мы принимаем разумные технические и организационные меры для защиты информации. Однако ни один метод передачи данных через Интернет не является 100% безопасным.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">9</span>Ваши права</h2>
+      <ul>
+        <li>Получить доступ к информации, которую мы храним о вас</li>
+        <li>Запросить удаление ваших данных</li>
+        <li>Отказаться от сбора аналитики</li>
+      </ul>
+      <a href="mailto:credano.loan@gmail.com" class="contact-btn">Написать нам →</a>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">10</span>Изменения в политике</h2>
+      <p>Мы можем периодически обновлять политику. Дата «Последнее обновление» в начале документа будет изменена. Продолжение использования приложения означает принятие обновлённой политики.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">11</span>Контакты</h2>
+      <p>По любым вопросам о настоящей Политике конфиденциальности:</p>
+      <a href="mailto:credano.loan@gmail.com" class="contact-btn">credano.loan@gmail.com</a>
+    </div>
+
+    <div class="disclaimer">
+      <h2>⚠️ Отказ от ответственности по займам</h2>
+      <p>Credano является агрегатором финансовых предложений и не предоставляет займы напрямую. Диапазон процентных ставок партнёров: <strong>от 0% до 999% годовых</strong>. Сроки займов: <strong>от 1 дня до 30 лет</strong>.</p>
+      <p>Конкретные условия (сумма, ставка, срок, комиссии) определяются каждым партнёром индивидуально. Перед оформлением займа внимательно ознакомьтесь с условиями выбранного кредитора.</p>
+    </div>
+
+  </div>
+
+  <!-- ══════════ ENGLISH VERSION ══════════ -->
+  <div class="lang-section" id="lang-en">
+
+    <div class="section">
+      <h2><span class="num">1</span>Introduction</h2>
+      <p>This Privacy Policy describes how <strong>Credano</strong> collects, uses, and protects information when you use our mobile application.</p>
+      <p>By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span>What We Are</h2>
+      <div class="highlight">
+        Credano is a loan aggregator. We do <strong>NOT provide loans directly</strong>. All loan agreements are concluded directly between the user and the Partner organization.
+      </div>
+      <p>We display offers from third-party financial organizations ("Partners") to help users find suitable loan products.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span>Information We Collect</h2>
+      <h3>3.1 Collected automatically:</h3>
+      <ul>
+        <li>Approximate location (country) — via IP address through ip-api.com, solely to show relevant offers</li>
+        <li>App usage data — pages viewed, buttons tapped, session duration (Firebase Analytics)</li>
+        <li>Device info — type, OS version, app version, language settings</li>
+      </ul>
+      <h3>3.2 We do NOT collect:</h3>
+      <ul>
+        <li>Name, surname, phone number, or email address</li>
+        <li>Passport data, financial information, or credit history</li>
+        <li>Precise GPS location</li>
+        <li>No personal data is stored on our servers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span>How We Use Your Information</h2>
+      <ul>
+        <li>To detect your country and show relevant loan offers</li>
+        <li>To remember your selected country (stored locally on device)</li>
+        <li>To improve app performance and fix issues (Firebase Crashlytics)</li>
+        <li>To analyze user interactions (Firebase Analytics)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">5</span>Data Sharing</h2>
+      <div class="highlight">We do not sell, trade, or rent your personal information to third parties.</div>
+      <h3>5.1 Third-party services:</h3>
+      <ul>
+        <li><strong>Google Firebase</strong> (Analytics, Crashlytics, Firestore) — infrastructure, analytics, crash reporting. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy →</a></li>
+        <li><strong>ip-api.com</strong> — IP-based country detection. <a href="https://ip-api.com/docs/legal" target="_blank">Their policy →</a></li>
+      </ul>
+      <h3>5.2 Partner websites:</h3>
+      <p>When you tap "Apply Now" you are redirected to the partner's external website. We are not responsible for partners' privacy practices.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">6</span>Data Retention</h2>
+      <ul>
+        <li>Country preference is stored locally and deleted when app is uninstalled</li>
+        <li>No personally identifiable information is stored on our servers</li>
+        <li>Anonymous analytics retained up to 14 months (Firebase standard)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">7</span>Children's Privacy</h2>
+      <p>Our App is not directed to children <strong>under 18</strong>. All loan products are intended for adults only. We do not knowingly collect information from minors.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">8</span>Security</h2>
+      <p>We implement reasonable technical and organizational measures to protect information. However, no method of Internet transmission is 100% secure.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">9</span>Your Rights</h2>
+      <ul>
+        <li>Access information we hold about you</li>
+        <li>Request deletion of your data</li>
+        <li>Opt out of analytics collection</li>
+      </ul>
+      <a href="mailto:credano.loan@gmail.com" class="contact-btn">Contact us →</a>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">10</span>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will update the "Last updated" date at the top. Continued use of the App constitutes acceptance of any changes.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">11</span>Contact Us</h2>
+      <p>For questions about this Privacy Policy:</p>
+      <a href="mailto:credano.loan@gmail.com" class="contact-btn">credano.loan@gmail.com</a>
+    </div>
+
+    <div class="disclaimer">
+      <h2>⚠️ Loan Disclaimer</h2>
+      <p>Credano is a financial offer aggregator and does not provide loans directly. Partner interest rates range from <strong>0% to 999% per annum</strong>. Loan terms range from <strong>1 day to 30 years</strong>.</p>
+      <p>Specific conditions (amount, rate, term, fees) are determined individually by each partner. Please read the lender's terms carefully before applying.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Credano. All rights reserved.
+</footer>
+
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('visible');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
